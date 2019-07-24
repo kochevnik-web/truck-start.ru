@@ -1,5 +1,26 @@
 <?php
 
+	/**
+	 * Подключение файлов CSS и JS шаблона
+	 */
+
+	add_action( 'wp_enqueue_scripts', 'galaxy_enqueue' );
+	function galaxy_enqueue() {
+
+		if ( MINIFY ) {
+			wp_enqueue_style( 'galaxy', get_template_directory_uri() . '/css/style.min.css' );
+
+			wp_enqueue_script( 'galaxy', get_template_directory_uri() . '/js/scripts.min.js', array( 'jquery' ), '1.0.0', true );
+		} else {
+			wp_enqueue_style( 'galaxy', get_template_directory_uri() . '/css/style.css' );
+			
+			wp_enqueue_script( 'galaxy', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.0', true );
+
+		}
+
+	}
+
+
 /** Do theme setup on the 'after_setup_theme' hook. */
 add_action( 'after_setup_theme', 'galaxy_theme_setup' );
 

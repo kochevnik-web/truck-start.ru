@@ -14,6 +14,7 @@ define( 'DB_PASSWORD', 'password' );
 define( 'DB_HOST', 'localhost' );
 define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
+define( 'MINIFY', false );
 
 define( 'AUTH_KEY',         'e~uFWh<(NZxngfS.YTDm%U|Mf{gZg.e,sP6u-!epbYrzR%Kc#99$Z|x}_b),pjX@' );
 define( 'SECURE_AUTH_KEY',  '9Hm:?RpTgO@F+4>dLACG6#-h?}NRvD#+WjfjGt3Iir2`z+KBI~U)U7JoT6&h@y/S' );
