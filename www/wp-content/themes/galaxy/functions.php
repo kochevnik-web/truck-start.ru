@@ -1,6 +1,4 @@
 <?php
-/** Load the Core Files */
-
 
 /** Do theme setup on the 'after_setup_theme' hook. */
 add_action( 'after_setup_theme', 'galaxy_theme_setup' );
