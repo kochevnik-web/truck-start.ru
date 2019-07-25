@@ -1,11 +1,549 @@
-<?php 
-    if ( ! defined( 'ABSPATH' ) ) {
-        exit; // Exit if accessed directly
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+                                   <link rel="shortcut icon" href="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/images/favicon.ico" type="image/x-icon"/>
+                <title>Home - car2</title>
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="car2 &raquo; Feed" href="https://smartdata.tonytemplates.com/car-repair-service/car2/feed/" />
+<link rel="alternate" type="application/rss+xml" title="car2 &raquo; Comments Feed" href="https://smartdata.tonytemplates.com/car-repair-service/car2/comments/feed/" />
+
+    
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/css/dist/block-library/theme.min.css?ver=5.2.2' type='text/css' media='all' />
+
+<link rel='stylesheet' id='changetemplatecolormain-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/Color-Change-template/css/change_color_template_main.css?ver=5.2.2' type='text/css' media='all' />
+
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+
+<link rel='stylesheet' id='js_composer_front-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.7' type='text/css' media='all' />
+
+<link rel='stylesheet' id='bootstrap-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/plugins/bootstrap.min.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='bootstrap-submenu-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/plugins/bootstrap-submenu.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='animate-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/plugins/animate.min.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='slick-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/plugins/slick.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='car-repair-services-style-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/style.css?ver=5.2.2' type='text/css' media='all' />
+
+<style id='car-repair-services-style-inline-css' type='text/css'>
+    body{
+    font-family: 'Open Sans';
+font-weight:400;
+font-size:16px;
+line-height:22px;
     }
 
-    get_header();
-?>
+            header.page-header-1 .header-right .address::after {
+        border-color: transparent rgba(19,19,19,1) transparent transparent;
+        }
+    
+            @media (min-width: 992px){
+        header.page-header-1 .navbar-nav > li > a,
+        header.page-header-2 .navbar-nav > li > a{
+                }
+        }
+    
+            /*--------   2.2 Header          --------*/
+        body.home header.page-header {
+        position: absolute;
+        background: none;
+        }
+        body:not(.home) {
+        background: url(https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/header-photo-bg.jpg) no-repeat center 0;
+        }
+        @media (max-width: 991px){
+        #pageTitle {
+        background: url(https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/header-photo-bg.jpg) repeat 0;
+        background-size: cover;
+        }
+        }
+        body:not(.home) #pageContent {
+        padding-top: 100px;
+        }
+        h1{
+    font-family:Muli;
+font-weight:600;
+font-size:40px;
+line-height:40px;
+color:#000;
+    }
+    h2{
+    font-family:Muli;
+font-weight:600;
+font-size:34px;
+line-height:40px;
+color:#000;
+    }
+    h3{
+    font-family:Muli;
+font-size:30px;
+line-height:36px;
+color:#000;
+    }
+    h4{
+    font-family:Muli;
+font-size:36px;
+line-height:32px;
+color:#000;
+    }
+    h5{
+    font-family:Muli;
+font-weight:700;
+font-size:20px;
+line-height:28px;
+color:#000;
+    }
+    h6{
+    font-family:Muli;
+font-size:16px;
+line-height:24px;
+color:#000;
+    }
+    a{  }
+    a:hover{  }
+    .car_repair_services_wc_products_tab.vc_tta.vc_tta-style-classic .vc_tta-tab a{ font-family:Muli;
+ }
+    .widget-title, .title-contact-info, .widgettitle{
+    font-family:Muli;
+        font-size:24px;
+    color:#000;
+    }
 
+    body{
+        }
+
+
+    /*anchor*/
+
+    dl, dd, a{
+        }
+
+    a:hover,h1 a:hover, h2 a:hover,.column-right .side-block ul li a:hover{
+        }
+
+    /*heading*/
+    .loader-circle-2{
+        }
+    .loader .line:nth-child(6),.loader .subline:nth-child(11){
+        }
+    .loader .needle:before{
+        }
+
+
+    h1, h2.h-lg,.modal-header a:hover{
+        }
+    .block.bg-1 h1, .block.bg-2 h1, .block.bg-3 h1, .block.bg-1 h2, .block.bg-2 h2, .block.bg-3 h2, .block.bg-1 h3, .block.bg-2 h3, .block.bg-3 h3, .black-bg-color h2.h-lg,
+    .banner-under-slider h2, .banner-under-slider h3, 
+    .banner-under-slider h4,.block.bg-dark h1, .block.bg-dark h2, .block.bg-dark h3,
+    .page-footer .footer-phone, .page-footer .footer-phone h2{
+        }
+    .nav-pills > li.active > a, .nav-pills > li.active > a:focus, 
+    .nav-pills > li.active > a:hover,.page-numbers.current{
+        }
+    .side-block{
+        }
+    .vc_toggle,.divider-line{
+        }
+    .promo-banner{
+        }
+    .quote-simple {
+        }
+
+    .color, a.color, a.color:hover, a.color:focus,
+    .filters-by-category ul li a:hover, 
+    .filters-by-category ul li a.selected,
+    .blog-post .post-meta li i.icon,
+    #appointmentForm.modal .modal-dialog .modal-header .close,
+    .slick-prev:hover:before, .slick-next:hover:before,.reply a{
+        }
+
+    .block.bg-1, .block.bg-2, .block.bg-3, 
+    block.bg-1 a, .block.bg-2 a, .block.bg-3 a,.banner-under-slider,
+    .services-angle-text h5,header .header-phone,header .header-right .address{
+        }
+    .text-icon .icon-wrapper > span i{
+        }
+    .vertical-tab-menu .list-group > a i.icon,
+    .stat-box .icon,.contact-info > .icon,.social-links ul li a,
+    .category-list > li:after,.services-block-alt .services-link,.promo-banner .icon-lg,.page-footer .contact-info .icon,
+    .page-footer .social-links ul li a,.breadcrumbs .breadcrumb a:hover,
+    .marker-list-sm > li:after,.link a,
+    .post-preview .post-title a:hover{
+        }
+
+    @media (max-width: 991px) {  
+    #slide-nav #slidemenu .close-menu,
+    header.page-header .navbar-toggle {
+        }  
+    }
+
+    a:hover,h1 a:hover, h2 a:hover,.column-right .side-block ul li a:hover{
+        }
+    /*heading*/
+    h1, h2, h3, h4, h5, h6 ,h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+        }
+
+    h1 b, h2 b,h3 b,h3 b{
+        }
+    @media (min-width: 992px){
+    header.page-header-1 .navbar-nav > li.current-menu-item a, 
+    header.page-header-1 .navbar-nav > li:hover a,
+    header.page-header-1 .navbar-nav > li > a:after{
+        }
+    }
+
+    .back-to-top a,
+    .services-block .image,
+    .services-angle-text .number,
+    .text-icon .icon-wrapper > span,
+    .nav-pills > li.active > a,
+    .nav-pills > li.active > a:focus, 
+    .nav-pills > li.active > a:hover,
+    .vc_toggle_square .vc_toggle_icon, 
+    .vc_toggle_square.panel-heading1.vc_toggle_icon,
+    .testimonials-item,td#today,
+    .page-numbers.current,
+    .service-icon .icon-wrapper span,
+    .services-block-alt .image i,.image-scale-color:after,.text-icon-sm .icon-wrapper > span,
+    .woocommerce #slide-nav #slidemenu.slide-active .search-container button.button,
+    .woocommerce .search-container button.button:hover,.service-icon .icon-wrapper .fack_icon_div,.services-block-alt .image .fack_icon_div,
+
+
+
+    .calendar_wrap td#today{
+        }
+
+    
+    header.page-header .appointment,header.page-header .appointment:after,.modal-header .appointment:after{
+        }
+
+    .input-custom:hover, 
+    .input-custom:focus, 
+    .input-custom.focus,
+    .table .cell-marker,
+    .coupon-print-inside{
+        }
+    header.page-header .appointment,.modal-header .appointment,.table .cell-marker{
+        }
+
+    .color, a.color, a.color:hover, a.color:focus,
+    .services-block .service.dark h2, .services-block .service.dark h3, 
+    .services-block .service.dark h4,header.page-header-1 .header-phone .phone-number .code,
+    .marker-list > li:after,header.page-header-1 .header-right .address span,
+    .testimonials-item .inside .rating,.services-block-alt .caption .title,
+    .testimonial-card:after,.icon-star:before,
+    blockquote::before{
+        }
+    .page-footer .footer-phone .number {
+        }
+
+    /*Menu Color*/
+    @media (min-width: 992px){
+    .navbar-nav > li.current-menu-item a,
+    .navbar-nav > li:hover a,
+    .navbar-nav > li > a:after,
+    header.page-header-1 .navbar-nav > li.current-menu-item a, 
+    header.page-header-1 .navbar-nav > li:hover a,
+    header.page-header-1 .navbar-nav > li > a:after
+    {
+            }
+    }
+
+    /*Slider Color*/
+
+    #mainSlider .slide-content h4,
+    #mainSlider .slide-content p{
+        }
+    #mainSlider .slide-content h4{
+    font-family:Muli;
+font-weight:200;
+    }
+
+    #mainSlider .slide-content h3{
+        font-family:Muli;
+font-weight:400;
+    }
+    #mainSlider .slick-prev:before,
+    #mainSlider .slick-next:before{
+        }
+    #mainSlider .slick-prev:hover:before, 
+    #mainSlider .slick-next:hover:before{
+        }
+    .slick-dots li.slick-active button, 
+    .slick-dots li.slick-active button:hover{
+        }
+
+    /*Button*/
+
+
+
+    .btn:before, .btn:after,.column-right .widget_search button:hover,input[type="submit"]:hover,
+    .tags-list li a:hover,.search-container:hover .button,.tagcloud a:hover{
+            }
+    .btn.btn-lg.btn-invert,.view-more-testimonial:hover{
+    
+        }
+    .btn-invert,
+    .btn-lg.btn-invert.view-more-testimonial{
+            }
+    .blog-post a.more-link:before, .blog-post a.more-link:after {
+        }
+    .btn.btn-border{
+        }
+
+
+    .btn:hover, .btn.active, .btn:active, .btn.focus, .btn:focus{
+            }
+    .btn-invert:hover, .btn-invert.active, .btn-invert:active, .btn-invert.focus, .btn-invert:focus{
+            }
+    .btn::before, .btn::after {
+            }
+
+    .btn.btn-invert::before, .btn.btn-invert::after {
+            }
+
+    .btn.btn-lg.btn-full.false-submit {
+            }
+
+    .btn.btn-lg.btn-full.false-submit:hover {
+            }
+    .btn.btn-lg.btn-full.false-submit span{
+        }
+    .btn.btn-lg.btn-full.false-submit:hover span {
+        }
+
+    .btn::before, .btn::after, .column-right .widget_search button:hover, input[type="submit"]:hover, .tags-list li a:hover,
+    #slide-nav #slidemenu.slide-active .search-container .button, .search-container:hover .button, .tagcloud a:hover {
+        }
+    @media (max-width: 991px) {
+    .header-info-toggle [class*='icon-']:hover {
+        }
+    }
+    .coupon-text4 {
+        }
+    .coupon-text5 {
+        }
+    .coupon .coupon-all::after {
+        }
+    .coupon .coupon-all {
+        }
+    .coupon-print-inside{
+        }
+    .coupon .coupon-all {
+        }
+    .coupon-text2{
+        }
+    .coupon .coupon-all:hover::after {
+        }
+    .coupon .coupon-all:hover {
+            }
+
+    header .header-cart:hover a.icon, header .header-cart.opened a.icon {
+        }
+    .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+        }
+    .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+        }
+    .woocommerce span.onsale,header .header-cart .badge{
+            }
+    .woocommerce-page .btn,
+    .woocommerce-page .btn.btn-lg{
+        }
+    .woocommerce .star-rating span::before ,.woocommerce .comment-form p.stars a,.woocommerce-tabs .tabs.wc-tabs li.active a {
+        }
+    .wc-tabs > li > a::after{
+        }
+    .woocommerce-pagination .page-numbers .page-numbers.current,
+    .woocommerce nav.woocommerce-pagination ul li a:focus, 
+    body.woocommerce nav.woocommerce-pagination ul li a:hover, 
+    .woocommerce nav.woocommerce-pagination ul li span.current{
+                }
+    .filters-row .page-numbers .current{
+    background-color:transparent !important;
+    color:#fede00;
+    }
+
+    header.page-header-2 a.appointment:after {
+        }
+                header.page-header-2 .header-topline [class*='icon'] {
+        color:#fede00;
+        }
+        body.layout-2 h1:after, body.layout-2 h2.h-lg:after {
+        background-color:#fede00;
+        }
+        @media (min-width: 992px){
+        header.page-header-2 .navbar-nav > li.current-menu-item > a:after, header.page-header-2 .navbar-nav > li:hover > a:after {
+        background-color:#fede00;
+        }
+        }
+        header.page-header-2 .search-container:hover .button {
+        background-color:#fede00;
+        }
+
+        #mainSlider .banner-btn, #mainSlider .banner-btn:focus{
+        border: 2px solid #fede00;       
+        }
+        .services-tabs .services-tabs-icons > span.active {
+        background-color:#fede00;
+    
+        }
+        .services-tabs .services-tab-info:after {
+        color:#fede00;
+ 
+        }
+        .icons-tabs .nav-tabs > li.active > a [class*='icon-'], .icons-tabs .nav-tabs > li > a:hover [class*='icon-'] {
+        color:#fede00;
+ 
+        }
+        .icons-tabs .nav-tabs > li > a::after {
+        background:#fede00;
+      
+        }
+        .marker-list-sm-1 > li:after {
+        color:#fede00;
+  
+        }
+        .how-works-number {
+        color:#fede00;
+   
+        }
+
+        .banner-free .banner-text-1 { 
+        background-color:#fede00;
+     
+        }
+        .banner-free .banner-text-1:after {
+        border-color: #fede00 transparent transparent transparent;
+        }
+        .pricing-box-header {
+        background-color:#fede00;
+    
+        }
+        .text-icon-hor2 .icon-wrapper2 {
+        color:#fede00;
+ 
+        }
+        #appointmentForm.modalform-sm .wpcf7-submit.btn {
+        border-color:#fede00;
+ 
+        }
+        body .textarea-custom:hover, 
+        body .textarea-custom:focus, 
+        body .input-custom:hover, 
+        body .input-custom.focus, 
+        body .wpcf7-form-control.wpcf7-textarea:hover, 
+        body .wpcf7-form-control.wpcf7-textarea:focus {
+        border-color: #fede00!important;
+ 
+        }
+        .bootstrap-datetimepicker-widget table td.active, 
+        .bootstrap-datetimepicker-widget table td.active:hover {
+        background-color: #fede00!important;
+ 
+        }
+        div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+        border-color:#fede00;
+        }
+        @media (min-width: 992px){
+        header.page-header-2 .navbar-nav .dropdown-menu {
+        border-bottom-color:#fede00;
+        }
+        }
+        .pricing-box-footer .mark-icon {
+        color:#fede00;
+ 
+        }
+        @media (max-width: 991px){
+        header.page-header-2 .navbar-toggle:hover {
+        color:#fede00;
+ 
+        }
+        }
+
+
+        .filters-row .page-numbers .current {
+        color:#fede00;
+ 
+        }
+        .estimator-panel .col-title [class*='icon'] {
+        color:#fede00;
+ 
+        }
+        .service-grid-item:hover .service-grid-item-title {
+        background-color:#fede00;
+ 
+        }
+        .service-grid-item-title:after {
+        border-color: transparent transparent #fede00 transparent;
+        }
+        @media (max-width: 767px){
+        .estimator-panel .panel-toggle {
+        color:#fede00;
+ 
+        }
+        }  
+        .car-faq-text .vc_toggle_title:hover h4 {
+        color:#fede00;
+ 
+        }
+        .btn-invert:before, .btn-invert:after {
+    background-color: #2c2c2c !important;
+    }
+
+    
+</style>
+<link rel='stylesheet' id='car-repair-services-wp-default-norm-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/wp-default-norm.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-datetimepicker-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/plugins/bootstrap-datetimepicker.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='iconfont-style-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/iconfont/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/plugins/magnific-popup.css' type='text/css' media='all' />
+<link rel='stylesheet' id='scrolling-tabs-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/plugins/jquery.scrolling-tabs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='shopcss-css'  href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/css/shop.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var changetemplatecolor_object = {"changetemplatecolor_ajax_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/color-setting.png","changetemplate_logo_red":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/logo-red-2.png","changetemplate_logo_orange":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/logo-orange-2.png","changetemplate_logo_yellow":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/logo-2.png","changetemplate_logo_green":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/logo-green-2.png","changetemplate_logo_turquoise":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/logo-turquoise-2.png","changetemplate_logo_blue":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/logo-blue-2.png","changetemplate_logo_violet":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/logo-violet-2.png","color_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/css\/"};
+var changetemplateimg_object = {"ajax_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","setting_icon":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/layout-setting.png","layout1_img":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/layout-1.png","layout2_img":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/layout-2.png","layout3_img":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/plugins\/Color-Change-template\/img\/layout-3.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/Color-Change-template/js/change_color_template.js?ver=5.2.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/auto-repair-search/assets/js/autorepair.js?ver=5.2.2'></script>
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/estimate-plugin/js/custom.js?ver=5.2.2'></script>
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/car-repair-service\/car2\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.6.4'></script>
+<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.7'></script>
+<link rel='https://api.w.org/' href='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://smartdata.tonytemplates.com/car-repair-service/car2/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.2" />
+<meta name="generator" content="WooCommerce 3.6.4" />
+<link rel='shortlink' href='https://smartdata.tonytemplates.com/car-repair-service/car2/' />
+<link rel="alternate" type="application/json+oembed" href="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmartdata.tonytemplates.com%2Fcar-repair-service%2Fcar2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmartdata.tonytemplates.com%2Fcar-repair-service%2Fcar2%2F&#038;format=xml" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" title="dynamic-css" class="options-output">header.page-header-1 .header-right-top, header .header-right .address{background-color:#131313;}.header.page-header-1 .header-right .address::after{border-color:#131313;}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1539427405185{margin-bottom: 0px !important;}.vc_custom_1539248910672{margin-bottom: 0px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>    </head>
+    
+    <body class="home page-template-default page page-id-56 wp-embed-responsive layout-2 woocommerce-no-js wpb-js-composer js-comp-ver-5.7 vc_responsive">
         <!-- Loader -->
         			<div id="loader-wrapper">
 				<div class="loader">
@@ -114,7 +652,7 @@
                                 
 
 <form role="search" method="get" class="search-form" action="https://smartdata.tonytemplates.com/car-repair-service/car2/">
-	<input type="search" id="search-form-5d395848d342f" class="search-field" 
+	<input type="search" id="search-form-5d3a22aaacad2" class="search-field" 
     placeholder="Search &hellip;" value="" name="s" />
 	<button type="submit" class="button"><i class="icon icon-search"></i></button>
 </form>                            </div>
@@ -536,45 +1074,45 @@ We only work with highly rated mechanics. All services are backed by our 12-mont
             </div>
             </div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid block"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-7"><div class="vc_column-inner"><div class="wpb_wrapper"><h3>Auto Maintenance FAQs</h3><div class="faq-items-sm panel-group" id="accordionFaq">    <div class="faq-item-sm panel panel-default">
         <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d395848da648" data-parent="#accordionFaq" class="collapsed">  Q: How often should I get my oil changed?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
+            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3d08" data-parent="#accordionFaq" class="collapsed">  Q: How often should I get my oil changed?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
         </div>
-        <div id="faq5d395848da648" class="panel-collapse collapse in ">
+        <div id="faq5d3a22aab3d08" class="panel-collapse collapse in ">
             <div class="panel-body">
                  A: For a long time and sometimes still today, standard practice at many lube shops is to suggest oil changes every three months or 3,000 miles. In order to know when the best time to get your oil changed is, check the owner’s manual of your specific model for manufacturer-recommended intervals.            </div>
         </div>
     </div>
         <div class="faq-item-sm panel panel-default">
         <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d395848da697" data-parent="#accordionFaq" class="collapsed">  Q: Should I worry about servicing my leased vehicle?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
+            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3d57" data-parent="#accordionFaq" class="collapsed">  Q: Should I worry about servicing my leased vehicle?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
         </div>
-        <div id="faq5d395848da697" class="panel-collapse collapse  ">
+        <div id="faq5d3a22aab3d57" class="panel-collapse collapse  ">
             <div class="panel-body">
                  A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
         </div>
     </div>
         <div class="faq-item-sm panel panel-default">
         <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d395848da6e2" data-parent="#accordionFaq" class="collapsed">  Q: How often should I change my vehicle’s timing belt?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
+            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3da2" data-parent="#accordionFaq" class="collapsed">  Q: How often should I change my vehicle’s timing belt?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
         </div>
-        <div id="faq5d395848da6e2" class="panel-collapse collapse  ">
+        <div id="faq5d3a22aab3da2" class="panel-collapse collapse  ">
             <div class="panel-body">
                  A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
         </div>
     </div>
         <div class="faq-item-sm panel panel-default">
         <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d395848da72b" data-parent="#accordionFaq" class="collapsed">  Q: Do I need to charge my battery after I jump-start my vehicle?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
+            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3dec" data-parent="#accordionFaq" class="collapsed">  Q: Do I need to charge my battery after I jump-start my vehicle?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
         </div>
-        <div id="faq5d395848da72b" class="panel-collapse collapse  ">
+        <div id="faq5d3a22aab3dec" class="panel-collapse collapse  ">
             <div class="panel-body">
                  A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
         </div>
     </div>
         <div class="faq-item-sm panel panel-default">
         <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d395848da772" data-parent="#accordionFaq" class="collapsed">  Q: How do I know when I need new brakes?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
+            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3e34" data-parent="#accordionFaq" class="collapsed">  Q: How do I know when I need new brakes?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
         </div>
-        <div id="faq5d395848da772" class="panel-collapse collapse  ">
+        <div id="faq5d3a22aab3e34" class="panel-collapse collapse  ">
             <div class="panel-body">
                  A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
         </div>
@@ -1057,7 +1595,7 @@ moment.locale( 'en_US', {"months":["January","February","March","April","May","J
 <script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/isotope.pkgd.min.js?ver=5.2.2'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ajax_object = {"ajax_nonce_cart":"f3611d693f","ajax_nonce_post":"15e98dac56","ajax_nonce_coupon":"e0378b115d","ajax_nonce_testimonial":"b79b63a8ee","ajax_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","loader_img":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/themes\/car-repair-services\/images\/ajax-loader.gif","site_preloader_timeout":"500"};
+var ajax_object = {"ajax_nonce_cart":"0c85a4d5c4","ajax_nonce_post":"922c1b9240","ajax_nonce_coupon":"49fd2c67b8","ajax_nonce_testimonial":"a7013a2ed6","ajax_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","loader_img":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/themes\/car-repair-services\/images\/ajax-loader.gif","site_preloader_timeout":"500"};
 var ajax_slickslider = {"autoplay":"true","autoplay_speed":"3000","arrows":"true","dots":"false","fade":"true","speed":"500","pause_on_hover":"true","pause_on_dots_hover":"true"};
 /* ]]> */
 </script>

@@ -231,5 +231,5 @@
 		</style>
 		
 	</head>
-	<body <?php body_class(); ?>>
+	<body class="home page-template-default page page-id-37 logged-in admin-bar no-customize-support">
 
