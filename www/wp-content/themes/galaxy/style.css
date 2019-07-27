@@ -746,6 +746,7 @@ img.alignnone {
 .type-page {
 	padding: 15px;
 	margin: 0 0 40px 0;
+	padding-top: 0px;
 	background: #fff;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
