@@ -3,53 +3,54 @@
 <?php get_header();	?>
                     
 <div id="pageContent" class="content-area">
-        <div class="block">
+    <div class="block">
         <div id="primary" class="container">
-                
-<div  id="post-56" class="post-56 page type-page status-publish hentry">
-	<!-- Block -->
-	<div class="offset-sm">
-	<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-        <div id="mainSliderWrapper">
-            <div id="mainSlider">
-                
-        <div class="slide">
-            <div class="img--holder"   style="background-image: url(https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/slide-new1.jpg);" ></div>
-            <div class="slide-content center">
-                <div class="vert-wrap container">
-                    <div class="vert">
-                        <div class="container">
-                            <h4 data-animation="zoomIn" data-animation-delay="0.5s">Multi-Point</h4>
-                            <h3 data-animation="scaleOut" data-animation-delay="0.2s">Vehicle Inspection</h3>
-                            <p data-animation="fadeIn" data-animation-delay="0.9s">No-charge start, Stop and Steering check</p>
-                                                            <a href="https://smartdata.tonytemplates.com/car-repair-service/car2/services/"  target=" _blank"  data-animation="fadeIn" data-animation-delay="1.5s" class="banner-btn" rel="">Schedule Service</a>
-                                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="slide">
-            <div class="img--holder"   style="background-image: url(https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/slide-new2.jpg);" ></div>
-            <div class="slide-content left">
-                <div class="vert-wrap container">
-                    <div class="vert">
-                        <div class="container">
-                            <h4 data-animation="zoomIn" data-animation-delay="0.5s">Offer Fast</h4>
-                            <h3 data-animation="scaleOut" data-animation-delay="0.2s">Reliable service</h3>
-                            <p data-animation="fadeIn" data-animation-delay="0.9s">Over 35 Years Of Quality Auto Service</p>
-                                                            <a href="https://smartdata.tonytemplates.com/car-repair-service/car2/services/"  target=" _blank"  data-animation="fadeIn" data-animation-delay="1.5s" class="banner-btn" rel="">Schedule Service</a>
-                                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                    </div>
-                    </div>
+            <div  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        </div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid slidertop-space"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">    <div class="block">
+                <?php if ( (bool)get_post_meta( $post->ID, 'main_slider_on', true ) ) { ?>
+	            <!-- Block Slider -->
+	            <div class="offset-sm">
+	                <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
+
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div id="mainSliderWrapper">
+                                        <div id="mainSlider">
+                                            <?php
+                                                $main_slides = get_post_meta( $post->ID, 'main_slides', true );
+                                                if ( $main_slides > 0 ) {
+                                                for ( $i = 0; $i < $main_slides; $i++ ) { 
+                                            ?>
+
+                                            <div class="slide">
+                                                <div class="img--holder" style="background-image: url(<?php echo wp_get_attachment_image_src( get_post_meta( $post->ID, 'main_slides_' . $i . '_slide_img', true ), 'full' )[0]; ?>);" ></div>
+                                                <div class="slide-content <?php echo get_post_meta( $post->ID, 'main_slides_' . $i . '_slide_float', true ); ?>">
+                                                    <div class="vert-wrap container">
+                                                        <div class="vert">
+                                                            <div class="container">
+                                                                <h4<?php echo ' ' . get_post_meta( $post->ID, 'main_slides_' . $i . '_animation_h4', true ); ?>><?php echo get_post_meta( $post->ID, 'main_slides_' . $i . '_main_slide_h4', true ); ?></h4>
+                                                                <h3<?php echo ' ' . get_post_meta( $post->ID, 'main_slides_' . $i . '_animation_h3', true ); ?>><?php echo get_post_meta( $post->ID, 'main_slides_' . $i . '_slide_h3', true ); ?></h3>
+                                                                <p data-animation="fadeIn" data-animation-delay="0.9s"><?php echo get_post_meta( $post->ID, 'main_slides_' . $i . '_header_p', true ); ?></p>
+                                                                <a href="<?php echo get_post_meta( $post->ID, 'main_slides_' . $i . '_slide_link', true ); ?>"  target=" _blank"  data-animation="fadeIn" data-animation-delay="1.5s" class="banner-btn" rel=""><?php echo get_post_meta( $post->ID, 'main_slides_' . $i . '_slide_text', true ); ?></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <?php } } ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Block Slider -->
+                <?php } ?>
+        
+        <div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid slidertop-space"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">    <div class="block">
         <div class="container container-fluid-sm">
             <div class="text-center">
                 <h2 class="h-lg">Our Featured Services</h2>

@@ -1,13 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?> style="margin-top: 0px!important;">
 	<head profile="http://gmpg.org/xfn/11">
 		<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
-		<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="<?php echo get_bloginfo( 'template_url' ) ?>/img/favicon.inc"/>
+		<link rel="shortcut icon" href="<?php echo get_bloginfo( 'template_url' ) ?>/img/favicon.ico"/>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+		<meta name='yandex-verification' content='69a974ac011cc21d' />
 		<?php wp_head(); ?>
 		<script type='text/javascript'>
 		/* <![CDATA[ */
@@ -126,8 +127,7 @@
                                 <div class="search-container-wrap">
                             		<div class="search-container">
                                 		<form role="search" method="get" class="search-form" action="">
-											<input type="search" id="search-form-5d3a22aaacad2" class="search-field" 
-    placeholder="Поиск &hellip;" value="" name="s" />
+											<input type="search" id="search-form" class="search-field" placeholder="Поиск &hellip;" value="" name="s" />
 											<button type="submit" class="button">
 												<i class="icon icon-search"></i>
 											</button>
