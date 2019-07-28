@@ -11808,33 +11808,33 @@ header.page-header-2 a.appointment:after {
 }
 
 .services-tabs .services-tabs-icons>span:nth-child(1) {
-    left: 8%;
+    left: 28%;
     top: 42%;
 }
 
 .services-tabs .services-tabs-icons>span:nth-child(2) {
-    left: 13%;
-    top: 28%;
+    left: 28%;
+    top: 61%;
 }
 
 .services-tabs .services-tabs-icons>span:nth-child(3) {
-    left: 25%;
-    top: 28%;
+    left: 44%;
+    top: 55%;
 }
 
 .services-tabs .services-tabs-icons>span:nth-child(4) {
-    left: 31%;
-    top: 48%;
+    left: 81%;
+    top: 62%;
 }
 
 .services-tabs .services-tabs-icons>span:nth-child(5) {
-    left: 38%;
-    top: 67%;
+    left: 44%;
+    top: 74%;
 }
 
 .services-tabs .services-tabs-icons>span:nth-child(6) {
-    left: 82%;
-    top: 59%;
+    left: 59%;
+    top: 62%;
 }
 
 .services-tab-button {

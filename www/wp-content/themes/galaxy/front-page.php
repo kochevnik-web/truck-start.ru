@@ -49,235 +49,191 @@
                 </div>
                 <!-- end Block Slider -->
                 <?php } ?>
-        
-        <div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid slidertop-space"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">    <div class="block">
-        <div class="container container-fluid-sm">
-            <div class="text-center">
-                <h2 class="h-lg">Our Featured Services</h2>
-                <p class="info">We offer full service auto repair & maintenance</p>
-            </div>
-            <div class="divider-md"></div>
-            <div class="services-tabs">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs services-tabs-nav" role="tablist">
-                                            <li class="active"><a href="#" data-icon='icon1'>
-                                                    <i class="icon-diag"></i>
-                          
-                        <span>Diagnostics</span></a></li>
-                                                <li class=""><a href="#" data-icon='icon2'>
-                                                    <i class="icon-engine"></i>
-                          
-                        <span>Engine Repair</span></a></li>
-                                                <li class=""><a href="#" data-icon='icon3'>
-                                                    <i class="icon-oil"></i>
-                          
-                        <span>Oil / Lube / Filters</span></a></li>
-                                                <li class=""><a href="#" data-icon='icon4'>
-                                                    <i class="icon-car-wheel"></i>
-                          
-                        <span>Tires</span></a></li>
-                                                <li class=""><a href="#" data-icon='icon5'>
-                                                    <i class="icon-gearshift"></i>
-                          
-                        <span>Transmission</span></a></li>
-                                                <li class=""><a href="#" data-icon='icon6'>
-                                                    <i class="icon-power"></i>
-                          
-                        <span>Batteries</span></a></li>
-                                        </ul>
-                <!-- Tab panes -->
-                <div class="services-tabs-content">
-                    <div class="services-tabs-content-bg-wrap">
-                        <div class="services-tabs-content-bg">
-                            <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/service-tab.png" alt="">
-                            <div class="services-tabs-icons">
-                                                                    <span class="services-tabs-icon icon1">
-                                                                                    <i class="icon-diag"></i>
-                                                 
-                                    </span>
-                                                                        <span class="services-tabs-icon icon2">
-                                                                                    <i class="icon-engine"></i>
-                                                 
-                                    </span>
-                                                                        <span class="services-tabs-icon icon3">
-                                                                                    <i class="icon-oil"></i>
-                                                 
-                                    </span>
-                                                                        <span class="services-tabs-icon icon4">
-                                                                                    <i class="icon-car-wheel"></i>
-                                                 
-                                    </span>
-                                                                        <span class="services-tabs-icon icon5">
-                                                                                    <i class="icon-gearshift"></i>
-                                                 
-                                    </span>
-                                                                        <span class="services-tabs-icon icon6">
-                                                                                    <i class="icon-power"></i>
-                                                 
-                                    </span>
-                                                                </div>
+
+                <div class="vc_row-full-width vc_clearfix"></div>
+
+                <?php if ( (bool)get_post_meta( $post->ID, 'our_featured_on', true ) ) { ?>
+                
+                <div class="vc_row wpb_row vc_row-fluid slidertop-space">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="block">
+                                    <div class="container container-fluid-sm">
+                                        <div class="text-center">
+                                            <h2 class="h-lg"><?php echo get_post_meta( $post->ID, 'our_featured_header', true ); ?></h2>
+                                            <p class="info"><?php echo get_post_meta( $post->ID, 'our_featured_title', true ); ?></p>
+                                        </div>
+                                        <div class="divider-md"></div>
+                                        <div class="services-tabs">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs services-tabs-nav" role="tablist">
+                                                <li class="active">
+                                                    <a href="#" data-icon='icon1'>
+                                                        <i class="icon-diag"></i>
+                                                        <span>Диагностика</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" data-icon='icon2'>
+                                                        <i class="icon-engine"></i>
+                                                        <span>Ремонт двигателя</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" data-icon='icon3'>
+                                                        <i class="icon-oil"></i>
+                                                        <span>Замена фильтров</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" data-icon='icon4'>
+                                                        <i class="icon-car-wheel"></i>
+                                                        <span>Шиномонтаж</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" data-icon='icon5'>
+                                                        <i class="icon-gearshift"></i>
+                                                        <span>Трансмиссия</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" data-icon='icon6'>
+                                                        <i class="icon-power"></i>
+                                                        <span>Аккамуляторы</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="services-tabs-content">
+                                                <div class="services-tabs-content-bg-wrap">
+                                                    <div class="services-tabs-content-bg">
+                                                        <img src="<?php echo get_bloginfo( 'template_url' ) ?>/img/man.png" alt="">
+                                                        <div class="services-tabs-icons">
+                                                            <span class="services-tabs-icon icon1">
+                                                                <i class="icon-diag"></i>
+                                                            </span>
+                                                            <span class="services-tabs-icon icon2">
+                                                                <i class="icon-engine"></i>
+                                                            </span>
+                                                            <span class="services-tabs-icon icon3">
+                                                                <i class="icon-oil"></i>
+                                                            </span>
+                                                            <span class="services-tabs-icon icon4">
+                                                                <i class="icon-car-wheel"></i>
+                                                            </span>
+                                                            <span class="services-tabs-icon icon5">
+                                                                <i class="icon-gearshift"></i>
+                                                            </span>
+                                                            <span class="services-tabs-icon icon6">
+                                                                <i class="icon-power"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="services-tab-info">
+                                                    <p class="services-tabs-text icon1 active">
+                                                    Если ваш двигатель болен или устал, у нас есть оборудование для проверки, диагностики и эффективного устранения любых проблем, которые могут возникнуть.
+                                                    </p>
+                                                    <p class="services-tabs-text icon2 ">
+                                                        Диагностика и ремонт двигателей грузавых автомобилей любой сложности. Квалифицированные профессионалы и сертифицированное оборудование.
+                                                    </p>
+                                                    <p class="services-tabs-text icon3 ">
+                                                        Замена всех видов фильтров и масел, с использованием качественных и оригинальных комплектующих. 
+                                                    </p>
+                                                    <p class="services-tabs-text icon4 ">
+                                                        Быстрый шиномонтаж и ремонт покрышек на всех видах грузовых колес. Бортировка, балансировка, прокатака и многое другое.
+                                                    </p>
+                                                    <p class="services-tabs-text icon5 ">
+                                                        Диагностикаа и ремонт трансмиссий, коробок передач и ходовой части на любых марках грузовых автомобилей.
+                                                    </p>
+                                                    <p class="services-tabs-text icon6 ">
+                                                        Замена и диагностика аккамуляторных батарей.
+                                                    </p>
+                                                </div>
+                                                <div class="services-tab-button">
+                                                    <a class="btn btn-invert" href="<?php echo get_post_meta( $post->ID, 'our_featured_link', true ); ?>" >
+                                                        <span><?php echo get_post_meta( $post->ID, 'our_featured_link_text', true ); ?></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="services-tab-info">
-                                                    <p class="services-tabs-text icon1 active">If your engine is sick or tired we have the equipment to check, diagnose and efficiently fix any problem you may have.</p>
-                                                        <p class="services-tabs-text icon2 ">Morbi vitae nibh eu enim convallis porttitor. Etiam sit amet fermentum diam, in aliquam erat. In nisi neque, pretium in quam.</p>
-                                                        <p class="services-tabs-text icon3 ">Pellentesque urna urna, rhoncus vitae elit id, maximus dictum arcu. Nulla malesuada dui eu efficitur aliquet. In nisi neque.</p>
-                                                        <p class="services-tabs-text icon4 ">Ut vitae quam et urna ultrices volutpat. Sed scelerisque tristique posuere. Praesent dapibus ligula eget sollicitudin congue.</p>
-                                                        <p class="services-tabs-text icon5 ">Donec massa nibh, placerat eu lobortis ut, ornare in massa. Quisque pellentesque, turpis sit amet ullamcorper mollis.</p>
-                                                        <p class="services-tabs-text icon6 ">Nunc porttitor in tellus a rutrum. Curabitur in ante dui. Sed id erat eget libero egestas mollis et id dolor.</p>
-                                                </div>
-                    <div class="services-tab-button">
-                                                <a class="btn btn-invert" href="https://smartdata.tonytemplates.com/car-repair-service/car2/services/" ><span>Know More</span></a>
-                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <style type="text/css"> .services-tabs .services-tabs-icons > span:nth-child(1) { left: 31%; top: 48%; }.services-tabs .services-tabs-icons > span:nth-child(2) { left: 8%; top: 42%; }.services-tabs .services-tabs-icons > span:nth-child(3) { left: 13%; top: 28%; }.services-tabs .services-tabs-icons > span:nth-child(4) { left: 82%; top: 59%; }.services-tabs .services-tabs-icons > span:nth-child(5) { left: 38%; top: 67%; }.services-tabs .services-tabs-icons > span:nth-child(6) { left: 25%; top: 28%; } </style></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<div class="wpb_text_column wpb_content_element  vc_custom_1539427405185" >
-		<div class="wpb_wrapper">
-			<div class="text-center">
-<h2 class="h-lg">We Provide Expert Service</h2>
-</div>
-<div class="divider-sm"></div>
+    
+                <?php } ?>
+    
+    
+                <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+	                            <div class="wpb_text_column wpb_content_element" >
+		                            <div class="wpb_wrapper">
+			                            <div class="text-center">
+                                            <h2 class="h-lg"><?php echo get_post_meta( $post->ID, 'expert_block_header', true ); ?></h2>
+                                        </div>
+                                    <div class="divider-sm"></div>
+		                        </div>
+	                        </div>
 
-		</div>
-	</div>
-
-    <div class="block ">
-        <div class="icons-tabs">
-            <ul class="nav nav-tabs">
+                            <div class="block ">
+                                <div class="icons-tabs">
+                                    <ul class="nav nav-tabs">
                                         <li class="active">
-                            <a href="#tab1" data-toggle="tab">
-                                <i class="icon-gear"></i>
-                                <span>Additional Services</span>
-                            </a>
-                        </li>
-                                                <li class="">
-                            <a href="#tab2" data-toggle="tab">
-                                <i class="icon-raketa"></i>
-                                <span>Our Advantages</span>
-                            </a>
-                        </li>
-                                                <li class="">
-                            <a href="#tab3" data-toggle="tab">
-                                <i class="icon-wrech1"></i>
-                                <span>About Company</span>
-                            </a>
-                        </li>
+                                            <a href="#tab1" data-toggle="tab">
+                                                <i class="icon-gear"></i>
+                                                <span><?php echo get_post_meta( $post->ID, 'expert_block_tab_1', true ); ?></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab2" data-toggle="tab">
+                                                <i class="icon-raketa"></i>
+                                                <span><?php echo get_post_meta( $post->ID, 'expert_block_tab_2', true ); ?></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab3" data-toggle="tab">
+                                                <i class="icon-wrech1"></i>
+                                                <span><?php echo get_post_meta( $post->ID, 'expert_block_tab_3', true ); ?></span>
+                                            </a>
+                                        </li>
                                     </ul>
-            <div class="tab-content-bg">
-                <div class="container">
-                    <div class="tab-content">
-                                                        <div class="tab-pane active" id="tab1">
-                                    <div class="text-center">
-<h5>Below are some of the many auto repair services we offer:</h5>
-</div>
-<div class="row">
-<div class="col-sm-6 col-md-4">
-<ul class="marker-list-sm-1">
- 	<li><a href="#">FREE Loaner Cars</a></li>
- 	<li><a href="#">FREE Shuttle Service</a></li>
- 	<li><a href="#">General Auto Repair &amp; Maintenance</a></li>
- 	<li><a href="#">Transmission Repair &amp; Replacement</a></li>
- 	<li><a href="#">Manufacturer Recommended Service</a></li>
- 	<li><a href="#">Brake Repair and Replacement</a></li>
- 	<li><a href="#">Air Conditioning A/C Repair</a></li>
- 	<li><a href="#">Tire Repair and Replacement</a></li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-4">
-<ul class="marker-list-sm-1">
- 	<li>FREE Loaner Cars</li>
- 	<li>FREE Shuttle Service</li>
- 	<li>General Auto Repair &amp; Maintenance</li>
- 	<li>Transmission Repair &amp; Replacement</li>
- 	<li>Manufacturer Recommended Service</li>
- 	<li>Brake Repair and Replacement</li>
- 	<li>Air Conditioning A/C Repair</li>
- 	<li>Tire Repair and Replacement</li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-4 hidden-sm hidden-xs">
-<ul class="marker-list-sm-1">
- 	<li>FREE Loaner Cars</li>
- 	<li>FREE Shuttle Service</li>
- 	<li>General Auto Repair &amp; Maintenance</li>
- 	<li>Transmission Repair &amp; Replacement</li>
- 	<li>Manufacturer Recommended Service</li>
- 	<li>Brake Repair and Replacement</li>
- 	<li>Air Conditioning A/C Repair</li>
- 	<li>Tire Repair and Replacement</li>
-</ul>
-</div>
-</div>
-<div class="divider-md"></div>
-<div class="text-center"><a class="btn btn-border" href="https://smartdata.tonytemplates.com/car-repair-service/car2/services/">+ View FULL LIST</a></div>                                </div>
-                                                                <div class="tab-pane " id="tab2">
-                                    <div class="row">
-<div class="col-sm-5"><img class="alignnone size-medium wp-image-1648 img-responsive" src="//smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/about-us-tab.png" alt="" width="438" height="385" /></div>
-<div class="divider-lg visible-xs"></div>
-<div class="col-sm-7">
-<h3>About Car Repair Services</h3>
-<p>Our service facility is independently owned and operated providing full-service repair and maintenance services. We use the latest diagnostic equipment to guarantee your vehicle is repaired or serviced properly and in a timely fashion. We are a member of Professional Auto Service, an elite performance network, where independent service facilities share common goals of being world-class automotive service centers.</p>
-<ul class="marker-list-sm">
- 	<li>24 Month / 24,000km Nationwide Warranty</li>
- 	<li>ASE Certified Technicians</li>
- 	<li>Customer Rewards Program</li>
- 	<li>24-Hour Roadside Assistance</li>
- 	<li>Courtesy Local Shuttle Service</li>
- 	<li>Courtesy Loaner Vehicle</li>
-</ul>
-</div>
-</div>                                </div>
-                                                                <div class="tab-pane " id="tab3">
-                                    <div class="row">
-<div class="col-sm-6 col-lg-5 col-lg-offset-1">
-<div class="text-icon-hor2">
-<div class="icon-wrapper2"><i class="icon-ok"></i></div>
-<div class="text">
-<h6>WE MAKE IT EASY</h6>
-Get a quote and book a service online 24/7. Our mechanics will come to your home or office, even on evenings and weekends.
-</div>
-</div>
-<div class="text-icon-hor2">
-<div class="icon-wrapper2"><i class="icon-ok"></i></div>
-<div class="text">
-<h6>FAIR AND TRANSPARENT PRICING</h6>
-We offer fair and transparent pricing and provide estimates upfront for hundreds of services on thousands of cars. Book with confidence.
-</div>
-</div>
-</div>
-<div class="divider-lg visible-xs"></div>
-<div class="col-sm-6 col-lg-5 col-lg-offset-1">
-<div class="text-icon-hor2">
-<div class="icon-wrapper2"><i class="icon-ok"></i></div>
-<div class="text">
-<h6>OEM factory parts warranty</h6>
-OEM parts are parts that are specifically made by the vehicle's manufacturer and therefore make finding parts for the specific vehicle much easier.
-</div>
-</div>
-<div class="text-icon-hor2">
-<div class="icon-wrapper2"><i class="icon-ok"></i></div>
-<div class="text">
-<h6>HAPPINESS GUARANTEED</h6>
-We only work with highly rated mechanics. All services are backed by our 12-month / 12,000-mile warranty.
-</div>
-</div>
-</div>
-</div>                                </div>
-                                                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <style>
-        .icons-tabs .tab-content-bg {
-            background: url(https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/bg-icon-tabs-content-1.jpg) no-repeat center center;
-            background-size: cover;
-        }
-    </style>
-</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="block "><div class="text-center"><h2 class="h-lg">How It Works</h2><p class="info">We offer full service auto repair & maintenance</p></div><div class="row" id="stepsAnimation">                  <div class="col-sm-3">
+
+                                    <div class="tab-content-bg">
+                                        <div class="container">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab1">
+                                                    <?php echo get_post_meta( $post->ID, 'expert_block_tab_1_content', true ); ?>
+                                                </div>
+
+                                                <div class="tab-pane " id="tab2">
+                                                    <?php echo get_post_meta( $post->ID, 'expert_block_tab_2_content', true ); ?>
+                                                </div>
+
+                                                <div class="tab-pane " id="tab3">
+                                                    <?php echo get_post_meta( $post->ID, 'expert_block_tab_3_content', true ); ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <style>
+                            .icons-tabs .tab-content-bg {
+                                background: url(<?php echo get_bloginfo( 'template_url' ); ?>/img/bg-icon-tabs.jpg) no-repeat center center;
+                                background-size: cover;
+                            }
+                            </style>
+</div></div></div></div>
+
+
+<div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="block "><div class="text-center"><h2 class="h-lg">How It Works</h2><p class="info">We offer full service auto repair & maintenance</p></div><div class="row" id="stepsAnimation">                  <div class="col-sm-3">
                     <div class="how-works-circle">
                 <div class="step step1">
                     <div class="step-inside">
