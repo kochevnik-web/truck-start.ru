@@ -167,7 +167,8 @@
                 </div>
     
                 <?php } ?>
-    
+
+                <?php if ( (bool)get_post_meta( $post->ID, 'expert_block_on', true ) ) { ?>
     
                 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -224,422 +225,49 @@
                                     </div>
                                 </div>
                             </div>
+
                             <style>
                             .icons-tabs .tab-content-bg {
                                 background: url(<?php echo get_bloginfo( 'template_url' ); ?>/img/bg-icon-tabs.jpg) no-repeat center center;
                                 background-size: cover;
                             }
                             </style>
-</div></div></div></div>
-
-
-<div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="block "><div class="text-center"><h2 class="h-lg">How It Works</h2><p class="info">We offer full service auto repair & maintenance</p></div><div class="row" id="stepsAnimation">                  <div class="col-sm-3">
-                    <div class="how-works-circle">
-                <div class="step step1">
-                    <div class="step-inside">
-                                                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-02-2.png" alt="">
-                                                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-01-1.png" alt="">
-                                                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-01-2.png" alt="">
-                                                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-01-3.png" alt="">
-                                                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-01-4.png" alt="">
-                                                </div>
-                </div>
-                <div class="how-works-number">
-                    1                </div>
-                <div class="how-works-text">
-                    CHOOSE YOUR SERVICE                </div>
-            </div>
-        </div>
-                          <div class="col-sm-3">
-                    <div class="how-works-circle">
-                <div class="step step2">
-                    <div class="step-inside">
-                                                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-02-1.png" alt="">
-                                                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-02-2-1.png" alt="">
-                                                </div>
-                </div>
-                <div class="how-works-number">
-                    2                </div>
-                <div class="how-works-text">
-                    MAKE AN APPOINTMENT                </div>
-            </div>
-        </div>
-                          <div class="col-sm-3">
-                    <div class="how-works-circle">
-                <div class="step step3">
-                    <div class="step-inside">
-                                                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-03.png" alt="">
-                                                </div>
-                </div>
-                <div class="how-works-number">
-                    3                </div>
-                <div class="how-works-text">
-                    WE'LL TAKE YOUR CAR FOR REPAIR                </div>
-            </div>
-        </div>
-                          <div class="col-sm-3">
-                    <div class="how-works-circle">
-                <div class="step step4">
-                    <div class="step-inside">
-                                                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/how-works-04.png" alt="">
-                                                </div>
-                </div>
-                <div class="how-works-number">
-                    4                </div>
-                <div class="how-works-text">
-                    PICK UP YOUR CAR KEYS                </div>
-            </div>
-        </div>
-        </div></div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"> <div class="block bg-4"><div class="container-fluid"><h2 class="h-lg text-center">What Our Customers Say</h2><div class="testimonials-carousel2">
-            <div class="testimonials-item2">
-                <div class="inside">
-                    <div class="container">
-                        <div class="meta">
-                            <span class="rating">
-                                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>                            </span>
-                            <span class="username">Bryce H. </span>
-                            <span class="userfrom">San Luis Obispo, CA</span></div>
-                        <div class="text"><p>“Excellent diagnostics, communication, and completion of the job in a very prompt and professional manner. We will definitely be sending more business their direction. Very happy with this shop and their mechanics”</p>
-</div>
-                    </div>
-                    <div class="testimonial-auto animations" data-animate-start="fadeInRight" data-animate-end="fadeOut" data-delay="0">
-                                                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2017/04/testimonial-auto-03.png" alt="">
-                                            </div>
-                </div>
-            </div>
-            
-            <div class="testimonials-item2">
-                <div class="inside">
-                    <div class="container">
-                        <div class="meta">
-                            <span class="rating">
-                                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>                            </span>
-                            <span class="username">Paul A. Munger. </span>
-                            <span class="userfrom">New York, NY</span></div>
-                        <div class="text"><p>“I’ve been using this garage for a number of years to service both our cars. They are really good, they always have a slot available, work fast and have good prices. Would recommend them without reservations.”</p>
-</div>
-                    </div>
-                    <div class="testimonial-auto animations" data-animate-start="fadeInRight" data-animate-end="fadeOut" data-delay="0">
-                                                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2017/04/testimonial-auto-01.png" alt="">
-                                            </div>
-                </div>
-            </div>
-            
-            <div class="testimonials-item2">
-                <div class="inside">
-                    <div class="container">
-                        <div class="meta">
-                            <span class="rating">
-                                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>                            </span>
-                            <span class="username">Harry J. Spencer. </span>
-                            <span class="userfrom">Deer Park, TX</span></div>
-                        <div class="text"><p>“Car Repair Service has become our service center of choice. Affordable pricing, and quick service. I had my A/C serviced in about 45 minutes while I waited and now the summer heat is tolerable. Great people, great service!”</p>
-</div>
-                    </div>
-                    <div class="testimonial-auto animations" data-animate-start="fadeInRight" data-animate-end="fadeOut" data-delay="0">
-                                                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2017/04/testimonial-auto-02.png" alt="">
-                                            </div>
-                </div>
-            </div>
-            </div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid block"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-7"><div class="vc_column-inner"><div class="wpb_wrapper"><h3>Auto Maintenance FAQs</h3><div class="faq-items-sm panel-group" id="accordionFaq">    <div class="faq-item-sm panel panel-default">
-        <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3d08" data-parent="#accordionFaq" class="collapsed">  Q: How often should I get my oil changed?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
-        </div>
-        <div id="faq5d3a22aab3d08" class="panel-collapse collapse in ">
-            <div class="panel-body">
-                 A: For a long time and sometimes still today, standard practice at many lube shops is to suggest oil changes every three months or 3,000 miles. In order to know when the best time to get your oil changed is, check the owner’s manual of your specific model for manufacturer-recommended intervals.            </div>
-        </div>
-    </div>
-        <div class="faq-item-sm panel panel-default">
-        <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3d57" data-parent="#accordionFaq" class="collapsed">  Q: Should I worry about servicing my leased vehicle?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
-        </div>
-        <div id="faq5d3a22aab3d57" class="panel-collapse collapse  ">
-            <div class="panel-body">
-                 A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
-        </div>
-    </div>
-        <div class="faq-item-sm panel panel-default">
-        <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3da2" data-parent="#accordionFaq" class="collapsed">  Q: How often should I change my vehicle’s timing belt?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
-        </div>
-        <div id="faq5d3a22aab3da2" class="panel-collapse collapse  ">
-            <div class="panel-body">
-                 A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
-        </div>
-    </div>
-        <div class="faq-item-sm panel panel-default">
-        <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3dec" data-parent="#accordionFaq" class="collapsed">  Q: Do I need to charge my battery after I jump-start my vehicle?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
-        </div>
-        <div id="faq5d3a22aab3dec" class="panel-collapse collapse  ">
-            <div class="panel-body">
-                 A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
-        </div>
-    </div>
-        <div class="faq-item-sm panel panel-default">
-        <div class="panel-heading" id="headingTwo">
-            <h4 class="panel-title"><a data-toggle="collapse" href="#faq5d3a22aab3e34" data-parent="#accordionFaq" class="collapsed">  Q: How do I know when I need new brakes?<span class="caret-toggle closed">–</span><span class="caret-toggle opened">+</span></a></h4>
-        </div>
-        <div id="faq5d3a22aab3e34" class="panel-collapse collapse  ">
-            <div class="panel-body">
-                 A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sit dignissimos esse iste deserunt hic incidunt ad quasi beatae. Eveniet hic necessitatibus fuga excepturi reprehenderit impedit numquam expedita consectetur delectus non facilis quidem praesentium, sunt recusandae, enim mollitia quod?            </div>
-        </div>
-    </div>
-    </div>
-	<div class="wpb_text_column wpb_content_element  vc_custom_1539248910672" >
-		<div class="wpb_wrapper">
-			<div class="divider-xl visible-sm visible-xs"></div>
-
-		</div>
-	</div>
-</div></div></div><div class="banner-col wpb_column vc_column_container vc_col-sm-6 vc_col-md-5 vc_col-xs-6"><div class="vc_column-inner"><div class="wpb_wrapper">    <div class="banner-free">
-        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/banner-free.jpg" alt="">
-        <div class="banner-text">
-            <div class="banner-text-header">
-                <div class="banner-text-1">FREE!</div>
-                <div class="banner-text-2">Winter & Summer Checks</div>
-            </div>
-            <div class="banner-text-3">
-                <p></p>
-<p>Make sure your vehicle is ready for the cold winter weather and that it’s safe and sound for your family’s summer holiday.</p>
-<p>Car Repair Service offers FREE checks for everybody.</p>
-<p></p>
-            </div>
-            <div class="banner-text-btn">
-                <div class="form-popup-wrap">
-                                            <a class="btn btn-invert form-popup-link" href="#"><span>Get Quote</span></a>
-                        <div class="form-popup">
-                            <div class="quote-form">
-                                <div role="form" class="wpcf7" id="wpcf7-f879-p1013-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/car-repair-service/car2/#wpcf7-f879-p1013-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="879" />
-<input type="hidden" name="_wpcf7_version" value="5.1.3" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f879-p1013-o1" />
-<input type="hidden" name="_wpcf7_container_post" value="1013" />
-</div>
-<div class="form-popup-close"><i class="icon-close-cross"></i></div>
-<div id="quote-form" method="post" novalidate="novalidate">
-<div id="successQuote" class="successform">
-<p>Your message was sent successfully!</p>
-</p></div>
-<div id="errorQuote" class="errorform">
-<p>Something went wrong, try refreshing and submitting the form again.</p>
-</p></div>
-<div class="form-inline">
-        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control input-custom" aria-required="true" aria-invalid="false" placeholder="Your Name" /></span>
-    </div>
-<div class="form-inline">
-<div>
-            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control input-custom" aria-required="true" aria-invalid="false" placeholder="Email" /></span>
-        </div>
-<div>
-            <span class="wpcf7-form-control-wrap your-phone"><input type="number" name="your-phone" value="" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number form-control input-custom" aria-required="true" aria-invalid="false" placeholder="Phone Number" /></span>
-        </div></div>
-<div class="form-inline">
-<div class="select-wrapper">
-            <span class="wpcf7-form-control-wrap select1"><select name="select1" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required input-custom" aria-required="true" aria-invalid="false"><option value="Vehicle">Vehicle</option><option value="Car">Car</option><option value="Bike">Bike</option></select></span>
-        </div>
-<div class="select-wrapper">
-            <span class="wpcf7-form-control-wrap select2"><select name="select2" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required input-custom valid" aria-required="true" aria-invalid="false"><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option></select></span>
-        </div></div>
-<div class="form-inline">
-<div class="select-wrapper">
-             <span class="wpcf7-form-control-wrap select3"><select name="select3" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required input-custom" aria-required="true" aria-invalid="false"><option value="Choose service">Choose service</option><option value="Preventative Maintenance">Preventative Maintenance</option><option value="Brake Repair &amp; Service">Brake Repair &amp; Service</option><option value="Transmission Service &amp; Repair">Transmission Service &amp; Repair</option></select></span>
-        </div></div>
-<div class="form-inline">
-        <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control textarea-custom" aria-required="true" aria-invalid="false" placeholder="Your comment"></textarea></span>
-    </div>
-<p>    <input type="submit" value="get a quote" class="wpcf7-form-control wpcf7-submit btn btn-lg btn-full" />
-</p></div>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                            </div>
                         </div>
+                    </div>
+                </div></div>
+
+                <?php } ?>
+
+                <div class="vc_row-full-width vc_clearfix"></div>
+
+                <?php if ( (bool)get_post_meta( $post->ID, 'marks_block_on', true ) ) { ?>
+            
+                <div class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="container">
+                                    <div class="text-center">
+                                        <h2 class="h-lg"><?php echo get_post_meta( $post->ID, 'marks_block_header', true ); ?></h2>
+                                        <p class="info"><?php echo get_post_meta( $post->ID, 'marks_block_title', true ); ?></p>
                                     </div>
-            </div>
-        </div>
-    </div>
-    </div></div></div><div class="banner-col wpb_column vc_column_container vc_col-sm-6 vc_col-md-12 vc_col-xs-6"><div class="vc_column-inner"><div class="wpb_wrapper">    <div class="divider-xxl visible-lg visible-md"></div>
-    <a href="#" class="banner-service">
-        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/banner-service.png" alt="" class="visible-sm visible-xs">
-        <div class="row-flex">
-            <div class="col-left">
-                <i class="icon icon-tow-truck"></i>
-            </div>
-            <div class="col-center">
-                <div class="banner-text-1"><span class="color">24 Hour</span> Breakdown Service</div>
-                <div class="banner-text-2">To order a Breakdown Recovery Service now or if you require a quote, please contact us add</div>
-            </div>
-            <div class="col-right">
-                <div class="banner-text-3"><i class="icon icon-phone"></i>1-800-123-45670</div>
-                <div class="banner-text-4">Whether you’re the driver of your own car or a rental, you’re covered 24/7, 365 days a year add</div>
-            </div>
-        </div>
-    </a>
+                                    <?php echo get_post_meta( $post->ID, 'marks_block_text', true ); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </div></div></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="block"><div class="container"><div class="text-center"><h2 class="h-lg">Our Pricing Plans</h2> <p class="info">Fixed price car servicing packages</p></div><div class="pricing-carousel row">  
-                    <div class="pricing-box col-md-4">
-                    <div class="pricing-box-inside">
-                <div class="pricing-box-header">
-                    <div class="text-1">Synthetic Blend Oil Change Special</div>
-                    <div class="divide-line"></div>
-                    <div class="text-2">$24<sup>99</sup></div>
-                </div>
-                <div class="pricing-box-center">
-                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/pricing-bg-01.png" alt="">
-                    <div class="text-3">Includes standard oil filter, up to 5 qts of SYNTHETIC BLEND oil and complete vehicle inspection.</div>
-                </div>
-                <div class="pricing-box-footer">
-                    <span class="mark-icon">*</span>
-                    <div class="text-4">Not valid with other offer or special. Coupon must be presented in advance.</div>
-                    <div class="pricing-box-logo">
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/logo-sm.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-          
-                    <div class="pricing-box col-md-4">
-                    <div class="pricing-box-inside">
-                <div class="pricing-box-header">
-                    <div class="text-1">Engine Coolant Inspection &amp; Service</div>
-                    <div class="divide-line"></div>
-                    <div class="text-2">$59<sup>99</sup></div>
-                </div>
-                <div class="pricing-box-center">
-                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/pricing-bg-02.png" alt="">
-                    <div class="text-3">Drain &amp; Replace with up to 1 Gallon of Antifreeze, Inspect all hoses, fittings and water pump.</div>
-                </div>
-                <div class="pricing-box-footer">
-                    <span class="mark-icon">*</span>
-                    <div class="text-4">Not valid with other offer or special. Coupon must be presented in advance.</div>
-                    <div class="pricing-box-logo">
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/logo-sm.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-          
-                    <div class="pricing-box col-md-4">
-                    <div class="pricing-box-inside">
-                <div class="pricing-box-header">
-                    <div class="text-1">Brake Fluid Flush and Repair Service</div>
-                    <div class="divide-line"></div>
-                    <div class="text-2">$24<sup>99</sup></div>
-                </div>
-                <div class="pricing-box-center">
-                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/pricing-bg-03.png" alt="">
-                    <div class="text-3">Your car’s brake system is a vital part of your vehicle and needs to function properly to help keep you safe.</div>
-                </div>
-                <div class="pricing-box-footer">
-                    <span class="mark-icon">*</span>
-                    <div class="text-4">Not valid with other offer or special. Coupon must be presented in advance.</div>
-                    <div class="pricing-box-logo">
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/logo-sm.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-          
-                    <div class="pricing-box col-md-4">
-                    <div class="pricing-box-inside">
-                <div class="pricing-box-header">
-                    <div class="text-1">Synthetic Blend Oil Change Special</div>
-                    <div class="divide-line"></div>
-                    <div class="text-2">$24<sup>99</sup></div>
-                </div>
-                <div class="pricing-box-center">
-                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/pricing-bg-01.png" alt="">
-                    <div class="text-3">Includes standard oil filter, up to 5 qts of SYNTHETIC BLEND oil and complete vehicle inspection.</div>
-                </div>
-                <div class="pricing-box-footer">
-                    <span class="mark-icon">*</span>
-                    <div class="text-4">Not valid with other offer or special. Coupon must be presented in advance.</div>
-                    <div class="pricing-box-logo">
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/logo-sm.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-          
-                    <div class="pricing-box col-md-4">
-                    <div class="pricing-box-inside">
-                <div class="pricing-box-header">
-                    <div class="text-1">Engine Coolant Inspection &amp; Service</div>
-                    <div class="divide-line"></div>
-                    <div class="text-2">$59<sup>99</sup></div>
-                </div>
-                <div class="pricing-box-center">
-                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/pricing-bg-02.png" alt="">
-                    <div class="text-3">Drain &amp; Replace with up to 1 Gallon of Antifreeze, Inspect all hoses, fittings and water pump.</div>
-                </div>
-                <div class="pricing-box-footer">
-                    <span class="mark-icon">*</span>
-                    <div class="text-4">Not valid with other offer or special. Coupon must be presented in advance.</div>
-                    <div class="pricing-box-logo">
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/logo-sm.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-          
-                    <div class="pricing-box col-md-4">
-                    <div class="pricing-box-inside">
-                <div class="pricing-box-header">
-                    <div class="text-1">Brake Fluid Flush and Repair Service</div>
-                    <div class="divide-line"></div>
-                    <div class="text-2">$24<sup>99</sup></div>
-                </div>
-                <div class="pricing-box-center">
-                    <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/pricing-bg-03.png" alt="">
-                    <div class="text-3">Your car’s brake system is a vital part of your vehicle and needs to function properly to help keep you safe.</div>
-                </div>
-                <div class="pricing-box-footer">
-                    <span class="mark-icon">*</span>
-                    <div class="text-4">Not valid with other offer or special. Coupon must be presented in advance.</div>
-                    <div class="pricing-box-logo">
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/logo-sm.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="container"><div class="text-center"><h2 class="h-lg">We Repair All Makes of Automobiles</h2> <p class="info">Find here your vehicle</p></div><div class="brands-grid">                <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-01-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-02-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-03-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-04-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-05-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-06-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-07-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-04-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-03-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-07-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-06-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-01-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-02-150x116.png" alt="image">
-           
-                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2018/10/brand-05-150x116.png" alt="image">
-           
-        </div><div class="divider-lg"></div> <div class="text-center"><a href="#" class="btn btn-border view-all-brands js-view-all-brands active"><span>+ View All Makes</span><span>- Show Less Makes</span></a></div></div></div></div></div></div>
-	</div>
-	<!-- //Block -->
-</div>
-        </div><!-- #primary -->
+                <?php } ?>
 
-    </div><!-- #block -->
+	        </div>
+	        <!-- //Block -->
+        </div>
+
+    </div><!-- #primary -->
+
+</div><!-- #block -->
+
 </div><!-- #pageContent -->
 <!-- Footer -->
 <div class="page-footer page-footer-2">
@@ -648,44 +276,58 @@
             <div class="footer-col-left">
                 <div class="inside">
                     <h5>Contact Info</h5>
-                                        <div class="contact-info"><i class="icon icon-locate"></i>2605 Caton Hill Road, Woodbridge, VA 22192                    </div>
-                                                            <div class="contact-info"><i class="icon icon-phone"></i>
-                        <a href="tel:1-800-1234567">1-800-1234567</a>
+                        <div class="contact-info">
+                            <i class="icon icon-locate"></i>
+                            <?php echo get_field( 'header_adres', 'option' ); ?>
+                        </div>
+                        <div class="contact-info">
+                            <i class="icon icon-phone"></i>
+                            <a href="tel:<?php echo get_field( 'header_phone', 'option' ); ?>"><?php echo get_field( 'header_phone', 'option' ); ?></a>
+                        </div>
+                        <div class="contact-info">
+                            <i class="icon icon-email"></i>
+                            <a href="mailto:<?php echo get_field( 'header_email', 'option' ); ?>"><?php echo get_field( 'header_email', 'option' ); ?></a>
+                        </div>
+                        <div class="contact-info-divider"></div>
+                        <h5>РЕЖИМ РАБОТЫ</h5>
+                        <div class="contact-info">
+                            <i class="icon icon-clock"></i>
+                            <?php echo get_field( 'footer_clock', 'option' ); ?>
+                        </div>
                     </div>
-                                                            <div class="contact-info"><i class="icon icon-email"></i><a href="mailto:officeone@youremail.com">officeone@youremail.com</a>
-                    </div>
-                                        <div class="contact-info-divider"></div>
-                    <h5>OPENING HOURS</h5>
-                                        <div class="contact-info"><i class="icon icon-clock"></i>Monday-Saturday <span class="color">7:00AM - 6:00PM</span> Sunday Closed                    </div>
-                                    </div>
-            </div>
-        </div>
+                 </div>
 
         
-    <!-- map -->
-    <div id="footer-map" class="footer-map"></div>
-    <!-- /map -->  
-    <!-- Google map -->
+                <!-- map -->
+                <div id="footer-map" class="footer-map"></div>
+                <!-- /map -->  
+                <!-- Google map -->
     <script type="text/javascript">
 
         window.addEventListener("scroll", lazyLoadGoogleMap);
         function lazyLoadGoogleMap() {
             var js_script = document.createElement('script');
             js_script.type = "text/javascript";
-            js_script.src = "//maps.google.com/maps/api/js?sensor=true&callback=init&key=AIzaSyCa33WY3EJObzo592BJKG6JFabx_qo4dtA";
+            js_script.src = "//maps.google.com/maps/api/js?sensor=true&callback=init&key=<?php echo get_field( 'google_key', 'option' ); ?>";
             js_script.async = true;
             document.getElementsByTagName('head')[0].appendChild(js_script);
             window.removeEventListener("scroll", lazyLoadGoogleMap);
         }
 
         function init() {
+
+            <?php
+                $coords     = get_field( 'google_coords', 'option' );
+                $arr_coords = explode( ',', $coords );
+                $coords_out = '"lat":"' . trim($arr_coords[0]) . '","lng":"' . trim($arr_coords[1]) . '"';
+            ?>
 			
 			var locations = [];
-							locations.push(['{"lat":"37.36274700000004","lng":"-122.03525300000001"}'])
-							locations.push(['{"lat":"37.36274700000004","lng":"-122.03525300000001","marker":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/uploads\/sites\/6\/2018\/11\/map-marker.png"}'])
+							locations.push(['{<?php echo $coords_out; ?>}'])
+							locations.push(['{<?php echo $coords_out; ?>,"marker":"<?php echo get_bloginfo( 'template_url' ); ?>/img/map-marker.png"}'])
 			            var mapOptions = {
                 zoom: parseInt(14),
-                center: new google.maps.LatLng(37.36274700000004, -122.03525300000001), 
+                center: new google.maps.LatLng(<?php echo $coords; ?>), 
                 styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]            };
             
             var mapElement = document.getElementById('footer-map');
@@ -705,7 +347,7 @@
 		
     </script>
 
-        </div>
+    </div>
     <div class="footer-bottom">
         <div class="container">
             <div class="copyright">© 2017 Car Repair Services, <span class="clearfix visible-xs"></span>All Rights Reserved</div>
