@@ -12839,7 +12839,7 @@ header.page-header-2 .search-container {
 }
 
 #appointmentForm.modalform-sm .modal-dialog {
-    width: 732px;
+    width: 550px;
     margin: 45px auto;
 }
 
@@ -14801,4 +14801,18 @@ button.gm-control-active {
 }
 body:not(.home) {
     background: url(images/header-photo-bg.jpg) no-repeat center 0;
+}
+
+.modal-content form {
+    text-align: center;
+}
+
+.modal-content form input {
+    margin: 10px 0 0 0;
+    width: 80%;
+    border: 1px solid #ccc;
+}
+
+.modal-content form input.wpcf7-submit {
+    margin-left: 38px;
 }

@@ -259,6 +259,22 @@
                 </div>
 
                 <?php } ?>
+                <section id="slider_reviews">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><h4>1</h4></div>
+                    <div class="item"><h4>2</h4></div>
+                    <div class="item"><h4>3</h4></div>
+                    <div class="item"><h4>4</h4></div>
+                    <div class="item"><h4>5</h4></div>
+                    <div class="item"><h4>6</h4></div>
+                    <div class="item"><h4>7</h4></div>
+                    <div class="item"><h4>8</h4></div>
+                    <div class="item"><h4>9</h4></div>
+                    <div class="item"><h4>10</h4></div>
+                    <div class="item"><h4>11</h4></div>
+                    <div class="item"><h4>12</h4></div>
+                </div>
+                </section>
 
 	        </div>
 	        <!-- //Block -->
@@ -275,7 +291,7 @@
         <div class="container">
             <div class="footer-col-left">
                 <div class="inside">
-                    <h5>Contact Info</h5>
+                    <h5>Контактная информация</h5>
                         <div class="contact-info">
                             <i class="icon icon-locate"></i>
                             <?php echo get_field( 'header_adres', 'option' ); ?>
@@ -348,203 +364,5 @@
     </script>
 
     </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="copyright">© 2017 Car Repair Services, <span class="clearfix visible-xs"></span>All Rights Reserved</div>
-            <div class="footer-bottom-right">
-                <div class="social-links">
-                    <ul>
-                                                    <li> 
-                                <a class="icon icon-facebook-logo" target="_blank" href="#"></a>
-                            </li>
-                        
-                                                    <li> 
-                                <a class="icon icon-twitter-logo" target="_blank" href="#"></a>
-                            </li>
-                        
-                                                    <li> 
-                                <a class="icon icon-instagram-logo" target="_blank" href="#"></a>
-                            </li>
-                        
-                                                    <li> 
-                                <a class="icon icon-google-plus-logo" target="_blank" href="#"></a>
-                            </li>
-                                                                                                                                                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>    <div class="back-to-top" style="bottom: 15px;"><a href="#top">
-        <span class="icon icon-transport"></span>
-        </a></div>
-    <div class="modal fade modalform-sm in" id="appointmentForm">
-        <div class="modal-dialog container">
-            <div class="modal-content">
-                <div class="modal-header"><a href="#" class="appointment" data-toggle="modal" data-target="#appointmentForm"><i class="icon-shape icon"></i>
-                    <span>Appointment</span>                    </a>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon-close-cross"></i></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <h2>Schedule Auto Service</h2>                        mailing list to receive updates on new arrivals, offers and other discount information.                        <div role="form" class="wpcf7" id="wpcf7-f1701-o2" lang="en-US" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/car-repair-service/car2/#wpcf7-f1701-o2" method="post" class="wpcf7-form" enctype="multipart/form-data" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="1701" />
-<input type="hidden" name="_wpcf7_version" value="5.1.3" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1701-o2" />
-<input type="hidden" name="_wpcf7_container_post" value="0" />
-</div>
-<div class="send-mail-ok-massage"></div>
-<h5>Contact information</h5>
-<div class="form-inline">
-<div>
-        <span class="wpcf7-form-control-wrap fname"><input type="text" name="fname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control input-custom" aria-required="true" aria-invalid="false" placeholder="First Name" /></span>
-    </div>
-<div>
-        <span class="wpcf7-form-control-wrap lname"><input type="text" name="lname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control input-custom" aria-required="true" aria-invalid="false" placeholder="Last Name" /></span>
-    </div>
-</div>
-<div class="form-inline">
-<div>
-        <span class="wpcf7-form-control-wrap your-phone"><input type="number" name="your-phone" value="" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number form-control input-custom" aria-required="true" aria-invalid="false" placeholder="Phone Number" /></span>
-    </div>
-<div>
-        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control input-custom" aria-required="true" aria-invalid="false" placeholder="Email" /></span>
-    </div>
-</div>
-<div class="divider"></div>
-<h5>Appointment details</h5>
-<div class="form-inline">
-<div class="datetimepicker-wrap">
-        <span class="wpcf7-form-control-wrap date"><input type="text" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control input-custom datetimepicker valid" aria-required="true" aria-invalid="false" /></span>
-    </div>
-<div class="timepicker-wrap">
-        <span class="wpcf7-form-control-wrap time"><input type="text" name="time" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control input-custom timepicker" aria-required="true" aria-invalid="false" /></span>
-    </div>
-</div>
-<div class="form-inline">
-<div>
-        <span class="wpcf7-form-control-wrap autoinfo"><input type="text" name="autoinfo" value="Vehicle Year, Make and Model" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control input-custom" aria-required="true" aria-invalid="false" /></span>
-    </div>
-<div class="form-inline">
-<div class="select-wrapper">
-            <span class="wpcf7-form-control-wrap select1"><select name="select1" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required input-custom valid" aria-required="true" aria-invalid="false"><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option></select></span>
-        </div>
-<div>
-            <span class="wpcf7-form-control-wrap kilometers"><input type="text" name="kilometers" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-custom" aria-invalid="false" placeholder="Current Kilometers" /></span>
-        </div>
-</p></div>
-</div>
-<div class="form-upload dflex">
-  <label class="upload"><span class="wpcf7-form-control-wrap your-file"><input type="file" name="your-file" size="40" class="wpcf7-form-control wpcf7-file" accept=".jpg,.jpeg,.png" aria-invalid="false" /></span></label>
-</div>
-<div class="form-inline">
-    <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control textarea-custom" aria-required="true" aria-invalid="false" placeholder="Service Required"></textarea></span>
-</div>
-<div class="divider-sm"></div>
-<div class="row">
-<div class="col-sm-5 col-md-4">
-        <button id="submit" class="wpcf7-form-control wpcf7-submit btn btn-lg btn-border"><span>SUBMIT</span></button>
-    </div>
-<div class="divider visible-xs"></div>
-<div class="col-sm-7 col-md-8">
-        Please note that the date and time you requested may not be available. We will contact you to confirm your actual appointment details.
-    </div>
-</div>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<script type="text/javascript">
-		var c = document.body.className;
-		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-		document.body.className = c;
-	</script>
-	<script type='text/javascript'>
-/* <![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.3'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/car-repair-service\/car2\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.6.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/car-repair-service\/car2\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_240925eba9346c1f5cf3d4bea883b695","fragment_name":"wc_fragments_240925eba9346c1f5cf3d4bea883b695","request_timeout":"5000"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.6.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/bootstrap.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/slick.min.js?ver=5.2.2'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var form_option = {"date_format":"DD\/MM\/YYYY"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/jquery.validate.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/dist/vendor/moment.min.js?ver=2.22.2'></script>
-<script type='text/javascript'>
-moment.locale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/bootstrap-datetimepicker.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/imagesloaded.pkgd.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/jquery.scrolling-tabs.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/spinner.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/forms.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/isotope.pkgd.min.js?ver=5.2.2'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var ajax_object = {"ajax_nonce_cart":"0c85a4d5c4","ajax_nonce_post":"922c1b9240","ajax_nonce_coupon":"49fd2c67b8","ajax_nonce_testimonial":"a7013a2ed6","ajax_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","loader_img":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/themes\/car-repair-services\/images\/ajax-loader.gif","site_preloader_timeout":"500"};
-var ajax_slickslider = {"autoplay":"true","autoplay_speed":"3000","arrows":"true","dots":"false","fade":"true","speed":"500","pause_on_hover":"true","pause_on_dots_hover":"true"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/custom.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/wp-embed.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.7'></script>
-  
-  <div class="modal fade modalform-sm" id="fullServices">
-    <div class="modal-dialog container">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>Select Service</h2>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon-close-cross"></i></button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <form
-            class="estimate_search" autocomplete="off"
-            action="https://smartdata.tonytemplates.com/car-repair-service/car2/estimateresult/result"
-            method="GET"
-            role="search">
-            <div class="row service-modal-row">
-            </div>
-            <input id="mk" type="hidden" name="make">
-            <input id="md" type="hidden" name="model">
-            <input id="yr" type="hidden" name="the_year">
-            <div class="tt-item">
-              <input placeholder="State, Zip, Town" type="hidden" name="s">
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-border" type="submit" id="estimatorSubmitModal"><span>GET ESTIMATE</span></button>
-            </div>
-          </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  </body>
-</html>
+    <?php get_footer(); ?>
