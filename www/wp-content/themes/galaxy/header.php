@@ -18,7 +18,7 @@
 		</script>
 		
 	</head>
-		<body <?php body_class(); ?>>
+		<body <?php body_class('layout-2'); ?>>
 		    <!-- Loader -->
 			<div id="loader-wrapper">
 				<div class="loader">

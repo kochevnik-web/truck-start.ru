@@ -147,6 +147,7 @@ if( function_exists('acf_add_options_page') ) {
 		wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css' );
 		wp_enqueue_style( 'iconfont', get_template_directory_uri() . '/css/iconfont.css' );
 		wp_enqueue_style( 'magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css' );
+		wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css' );
 		wp_enqueue_style( 'scrolling-tabs', get_template_directory_uri() . '/css/scrolling-tabs.css' );
 		wp_enqueue_style( 'galaxy', get_template_directory_uri() . '/css/style.css' );
 		

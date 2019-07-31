@@ -259,29 +259,44 @@
                 </div>
 
                 <?php } ?>
-                <section id="slider_reviews">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><h4>1</h4></div>
-                    <div class="item"><h4>2</h4></div>
-                    <div class="item"><h4>3</h4></div>
-                    <div class="item"><h4>4</h4></div>
-                    <div class="item"><h4>5</h4></div>
-                    <div class="item"><h4>6</h4></div>
-                    <div class="item"><h4>7</h4></div>
-                    <div class="item"><h4>8</h4></div>
-                    <div class="item"><h4>9</h4></div>
-                    <div class="item"><h4>10</h4></div>
-                    <div class="item"><h4>11</h4></div>
-                    <div class="item"><h4>12</h4></div>
-                </div>
-                </section>
+
 
 	        </div>
 	        <!-- //Block -->
         </div>
 
     </div><!-- #primary -->
-
+            
+            <?php if ( (bool)get_post_meta( $post->ID, 'carusel_on', true ) ) { ?>
+                <section id="slider_reviews">
+                    <div class="container">
+                        <h2 class="h-lg text-center"><?php echo get_post_meta( $post->ID, 'carusel_title', true ); ?></h2>
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <div class="meta">
+                                    <span class="rating">
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                    </span>
+                                    <span class="username">Александр Орлов</span>
+                                    <span class="userfrom">Компания "ТРАНС ПУТЬ"</span>
+                                </div>
+                                <div class="text">
+                                    <p>Я очень благодарен компании truck-start.ru за проведенную диагностику двигателя и трансмиссии моей машины. Все работы выполнены качественно и в кратчайшие сроки. Спасибо ребята! Обязательно обращусь еще к Вам!</p>
+                                    <div class="testimonial-auto animations animated" data-animate-start="fadeInRight" data-animate-end="fadeOut" data-delay="0" style="animation-delay: 0ms;">
+                                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2017/04/testimonial-auto-02.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item"><h4>2</h4></div>
+                            <div class="item"><h4>3</h4></div>
+                        </div>
+                    </div>
+                </section>
+            <?php } ?>
 </div><!-- #block -->
 
 </div><!-- #pageContent -->
