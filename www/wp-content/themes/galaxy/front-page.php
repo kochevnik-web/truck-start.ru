@@ -286,7 +286,7 @@
                                 </div>
                                 <div class="text">
                                     <p>Я очень благодарен компании truck-start.ru за проведенную диагностику двигателя и трансмиссии моей машины. Все работы выполнены качественно и в кратчайшие сроки. Спасибо ребята! Обязательно обращусь еще к Вам!</p>
-                                    <div class="testimonial-auto animations animated" data-animate-start="fadeInRight" data-animate-end="fadeOut" data-delay="0" style="animation-delay: 0ms;">
+                                    <div class="testimonial-auto animations" data-animate-start="fadeInRight" data-animate-end="fadeOut" data-delay="0" style="animation-delay: 0ms;">
                                         <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2017/04/testimonial-auto-02.png" alt="">
                                     </div>
                                 </div>
