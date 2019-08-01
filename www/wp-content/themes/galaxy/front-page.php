@@ -267,12 +267,14 @@
 
     </div><!-- #primary -->
             
-            <?php if ( (bool)get_post_meta( $post->ID, 'carusel_on', true ) ) { ?>
+            <?php if ( (bool)get_post_meta( $post->ID, 'carusel_on', true ) && get_post_meta( $post->ID, 'carusel_reviews', true ) > 0 ) { ?>
                 <section id="slider_reviews">
                     <div class="container">
                         <h2 class="h-lg text-center"><?php echo get_post_meta( $post->ID, 'carusel_title', true ); ?></h2>
                         <div class="owl-carousel">
-                            <div class="item">
+                            <?php $count = get_post_meta( $post->ID, 'carusel_reviews', true ); ?>
+                            <?php for ( $i=0; $i < $count; $i++ ) { ?>
+                                <div class="item">
                                 <div class="meta">
                                     <span class="rating">
                                         <i class="icon-star"></i>
@@ -281,18 +283,21 @@
                                         <i class="icon-star"></i>
                                         <i class="icon-star"></i>
                                     </span>
-                                    <span class="username">Александр Орлов</span>
-                                    <span class="userfrom">Компания "ТРАНС ПУТЬ"</span>
+                                    <span class="username">
+                                        <?php echo get_post_meta( $post->ID, 'carusel_reviews_' . $i . '_carusel_reviews_name', true ); ?>
+                                    </span>
+                                    <span class="userfrom">
+                                        <?php echo get_post_meta( $post->ID, 'carusel_reviews_' . $i . '_carusel_reviews_company', true ); ?>
+                                    </span>
                                 </div>
                                 <div class="text">
-                                    <p>Я очень благодарен компании truck-start.ru за проведенную диагностику двигателя и трансмиссии моей машины. Все работы выполнены качественно и в кратчайшие сроки. Спасибо ребята! Обязательно обращусь еще к Вам!</p>
+                                    <p><?php echo get_post_meta( $post->ID, 'carusel_reviews_' . $i . '_carusel_reviews_text', true ); ?></p>
                                     <div class="testimonial-auto animations" data-animate-start="fadeInRight" data-animate-end="fadeOut" data-delay="0" style="animation-delay: 0ms;">
-                                        <img src="https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/uploads/sites/6/2017/04/testimonial-auto-02.png" alt="">
+                                        <img src="<?php echo wp_get_attachment_image_src( get_post_meta( $post->ID, 'carusel_reviews_' . $i . '_carusel_reviews_img', true ), 'full' )[0]; ?>" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="item"><h4>2</h4></div>
-                            <div class="item"><h4>3</h4></div>
+                            <?php } ?>
                         </div>
                     </div>
                 </section>

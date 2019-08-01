@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - All in One SEO Pack - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-07-25 23:32:22+0000\n"
+"PO-Revision-Date: 2019-08-01 20:00:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1042,7 +1042,7 @@ msgstr "Доступ к видео-урокам по SEO в Pro версии"
 
 #: admin/aioseop_module_class.php:2743
 msgid "Reset %s Settings to Defaults"
-msgstr "Сбросить %s настройки на настройки по умолчанию"
+msgstr "Сбросить %s настройки в стандартное состояние"
 
 #: admin/class-aioseop-helper.php:119
 msgid "This option will automatically generate Canonical URLs for your entire WordPress installation.  This will help to prevent duplicate content penalties by Google."
@@ -2862,7 +2862,7 @@ msgstr "Премиум версия"
 
 #: admin/display/general-metaboxes.php:38
 msgid "Reset Dismissed Notices"
-msgstr "Сбросить отклоненные уведомления"
+msgstr "Сбросить отклонённые уведомления"
 
 #: aioseop_class.php:3185
 msgid "nofollow"
@@ -2890,11 +2890,11 @@ msgstr "По умолчанию - noindex"
 
 #: aioseop_class.php:3091
 msgid "Reset ALL Settings to Defaults"
-msgstr "Сбросить ВСЕ настройки по умолчанию"
+msgstr "Сбросить ВСЕ настройки"
 
 #: aioseop_class.php:3086
 msgid "Reset General Settings to Defaults"
-msgstr "Сбросить общие настройки по умолчанию"
+msgstr "Сбросить главные настройки"
 
 #: aioseop_class.php:2949
 msgid "Title Format:"
