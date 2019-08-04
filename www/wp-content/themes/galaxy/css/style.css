@@ -14799,7 +14799,7 @@ button.gm-control-active {
     max-width: 100%;
 }
 body:not(.home) {
-    background: url(images/header-photo-bg.jpg) no-repeat center 0;
+    background: url(../img/header-photo-bg.jpg) no-repeat center 0;
 }
 
 .modal-content form {
@@ -14852,4 +14852,46 @@ body:not(.home) {
 .testimonial-auto {
     width: 80%;
     margin: 40px auto;
+}
+
+body:not(.home) #pageContent {
+    padding-top: 100px;
+}
+
+.content-area a {
+    color: #fede00;
+    text-decoration: underline;
+}
+
+.content-area a:hover {
+    color: #fede00;
+    text-decoration: none;
+}
+
+.widget.widget_nav_menu a {
+    color: #292929;
+}
+
+.widget.widget_nav_menu a:hover {
+    color: #292929;
+    text-decoration: underline;
+}
+
+#sidebar .widget.widget_nav_menu ul li {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 5px 0 5px 15px;
+    position: relative;
+    margin-top: 0;
+}
+
+#sidebar .widget.widget_nav_menu ul li:after {
+    content: '\e920';
+    font-family: 'auto';
+    color: #fede00;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-size: 10px;
 }

@@ -1,3 +1,83 @@
+<!-- Footer -->
+<div class="page-footer page-footer-2">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-col-left">
+                <div class="inside">
+                    <h5>Контактная информация</h5>
+                        <div class="contact-info">
+                            <i class="icon icon-locate"></i>
+                            <?php echo get_field( 'header_adres', 'option' ); ?>
+                        </div>
+                        <div class="contact-info">
+                            <i class="icon icon-phone"></i>
+                            <a href="tel:<?php echo get_field( 'header_phone', 'option' ); ?>"><?php echo get_field( 'header_phone', 'option' ); ?></a>
+                        </div>
+                        <div class="contact-info">
+                            <i class="icon icon-email"></i>
+                            <a href="mailto:<?php echo get_field( 'header_email', 'option' ); ?>"><?php echo get_field( 'header_email', 'option' ); ?></a>
+                        </div>
+                        <div class="contact-info-divider"></div>
+                        <h5>РЕЖИМ РАБОТЫ</h5>
+                        <div class="contact-info">
+                            <i class="icon icon-clock"></i>
+                            <?php echo get_field( 'footer_clock', 'option' ); ?>
+                        </div>
+                    </div>
+                 </div>
+
+        
+                <!-- map -->
+                <div id="footer-map" class="footer-map"></div>
+                <!-- /map -->  
+                <!-- Google map -->
+    <script type="text/javascript">
+
+        window.addEventListener("scroll", lazyLoadGoogleMap);
+        function lazyLoadGoogleMap() {
+            var js_script = document.createElement('script');
+            js_script.type = "text/javascript";
+            js_script.src = "//maps.google.com/maps/api/js?sensor=true&callback=init&key=<?php echo get_field( 'google_key', 'option' ); ?>";
+            js_script.async = true;
+            document.getElementsByTagName('head')[0].appendChild(js_script);
+            window.removeEventListener("scroll", lazyLoadGoogleMap);
+        }
+
+        function init() {
+
+            <?php
+                $coords     = get_field( 'google_coords', 'option' );
+                $arr_coords = explode( ',', $coords );
+                $coords_out = '"lat":"' . trim($arr_coords[0]) . '","lng":"' . trim($arr_coords[1]) . '"';
+            ?>
+			
+			var locations = [];
+							locations.push(['{<?php echo $coords_out; ?>}'])
+							locations.push(['{<?php echo $coords_out; ?>,"marker":"<?php echo get_bloginfo( 'template_url' ); ?>/img/map-marker.png"}'])
+			            var mapOptions = {
+                zoom: parseInt(14),
+                center: new google.maps.LatLng(<?php echo $coords; ?>), 
+                styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]            };
+            
+            var mapElement = document.getElementById('footer-map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+			for (count = 1; count < locations.length; count++) {
+				var locations_obj=JSON.parse(locations[count]);
+				if(locations_obj.lat !=''){
+					var marker =new google.maps.Marker({
+						position: new google.maps.LatLng(locations_obj.lat, locations_obj.lng),
+						map: map,
+						icon: locations_obj.marker
+					});
+				}
+            }
+            
+        }
+		
+    </script>
+
+    </div>
+
 <div class="footer-bottom">
     <div class="container">
         <div class="copyright">
@@ -62,63 +142,7 @@
             </div>
         </div>
     </div>
-	<script type="text/javascript">
-		var c = document.body.className;
-		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-		document.body.className = c;
-	</script>
-	<script type='text/javascript'>
-/* <![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.3'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/car-repair-service\/car2\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.6.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/car-repair-service\/car2\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_240925eba9346c1f5cf3d4bea883b695","fragment_name":"wc_fragments_240925eba9346c1f5cf3d4bea883b695","request_timeout":"5000"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.6.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/bootstrap.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/slick.min.js?ver=5.2.2'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var form_option = {"date_format":"DD\/MM\/YYYY"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/jquery.validate.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/dist/vendor/moment.min.js?ver=2.22.2'></script>
-<script type='text/javascript'>
-moment.locale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/bootstrap-datetimepicker.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/imagesloaded.pkgd.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/jquery.scrolling-tabs.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/jquery/ui/spinner.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/forms.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/plugins/isotope.pkgd.min.js?ver=5.2.2'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var ajax_object = {"ajax_nonce_cart":"0c85a4d5c4","ajax_nonce_post":"922c1b9240","ajax_nonce_coupon":"49fd2c67b8","ajax_nonce_testimonial":"a7013a2ed6","ajax_url":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-admin\/admin-ajax.php","loader_img":"https:\/\/smartdata.tonytemplates.com\/car-repair-service\/car2\/wp-content\/themes\/car-repair-services\/images\/ajax-loader.gif","site_preloader_timeout":"500"};
-var ajax_slickslider = {"autoplay":"true","autoplay_speed":"3000","arrows":"true","dots":"false","fade":"true","speed":"500","pause_on_hover":"true","pause_on_dots_hover":"true"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/themes/car-repair-services/js/custom.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-includes/js/wp-embed.min.js?ver=5.2.2'></script>
-<script type='text/javascript' src='https://smartdata.tonytemplates.com/car-repair-service/car2/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.7'></script>
   
-
 <?php wp_footer(); ?>
 </body>
 </html>
