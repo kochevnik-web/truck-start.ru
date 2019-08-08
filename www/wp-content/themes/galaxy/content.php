@@ -1,37 +1,56 @@
-<?php galaxy_featured_image(); ?>
+<?php get_header();	?>
+  
+  <?php if ( have_posts() ) : ?>
+  
+    <?php while ( have_posts() ) : the_post(); ?>
+    <div id="pageTitle">
+        <div class="container">
+			<div class="breadcrumbs">
+				<!-- Breadcrumb section -->
+				<span>
+					<span>
+						<a href="/" >Главная</a> / 
+						<span class="breadcrumb_last" aria-current="page"><?php the_title(); ?></span>
+					</span>
+				</span>
+			</div>
+		</div>
+		<!--end Breadcrumb section -->
 
-<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <!-- .entry-header -->
+        <header class="entry-header">
+            <div class="container">
+                <h1><?php the_title(); ?></h1>
+            </div>
+        </header>
+        <!-- .entry-header -->
+		<!-- #pageTitle -->
+</div>
+		<div id="pageContent">
+			<div class="block">
+        		<div id="primary" class="container">
+					<div class="row">
+						<div  id="post-<?php the_ID(); ?>" <?php post_class('col-md-8 content-area'); ?>>
+							<?php the_content(); ?>
+							<div class="clear"></div>
+						</div><!-- #post-<?php the_ID(); ?> -->
+						<div class="col-md-4">
+							<?php get_sidebar(); ?>
+						</div>
+					</div><!--row -->
+				</div><!-- #primary -->
+			</div><!-- .block -->
+		</div><!-- #pageContent -->
+
+	
+	<?php endwhile; ?>
   
-  <?php $entry_title = ( 'page' == get_post_type() && galaxy_post_edit_link() == "" )? 'entry-title entry-title-page' : 'entry-title'; ?>
-  <h1 class="<?php echo $entry_title; ?>"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+  <?php else : ?>
+              
+	<?php get_template_part( 'loop-error' ); ?>
   
-  <?php if ( 'post' == get_post_type() ) : ?>
-  
-  <div class="entry-meta">    
-	<?php echo galaxy_post_date() . galaxy_post_comments() . galaxy_post_author(); ?>
-    <?php if ( is_sticky() ) : printf( '<span class="entry-meta-sep"> &sdot; </span> <span class="entry-meta-featured">%1$s</span>', __( 'Featured', 'galaxy' ) ); endif; ?>    
-	<?php echo galaxy_post_edit_link(); ?>  
-  </div><!-- .entry-meta -->
-  
-  <?php elseif ( 'page' == get_post_type() && galaxy_post_edit_link() != "" ) : ?>
-  
-  <div class="entry-meta"> 
-    <?php echo galaxy_post_edit_link(); ?> 
-  </div>
-  
-  <?php endif;?>  
-  
-  <div class="entry-content">
-  	<?php galaxy_post_style(); ?>
-  <div class="clear"></div>
-  </div> <!-- end .entry-content -->
-  
-  <?php echo galaxy_link_pages(); ?>
-  
-  <div class="entry-meta-bottom">
-  <?php if ( 'post' == get_post_type() ) : ?>  
-  <?php echo galaxy_post_category() . galaxy_post_tags(); ?>  
   <?php endif; ?>
-  </div><!-- .entry-meta-bottom -->
+  
+  <?php get_template_part( 'loop-nav' ); ?>
 
-</div> <!-- end #post-<?php the_ID(); ?> .post_class -->
+<?php get_footer(); ?>
