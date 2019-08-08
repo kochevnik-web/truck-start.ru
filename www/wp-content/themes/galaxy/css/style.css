@@ -6830,7 +6830,7 @@ h2+.testimonials {
 
 .blog-post a.more-link {
     display: inline-block;
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -14908,4 +14908,16 @@ body:not(.home) #pageContent {
 .content-area .tags-links a {
     color: #000000;
     text-decoration: none;
+}
+
+.blog_item_list {
+    border-bottom: 1px solid #fede00;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.blog_item_list:last-child {
+    border-bottom: none;
+    padding: 0 0 20px 0;
+    margin: 0;
 }
