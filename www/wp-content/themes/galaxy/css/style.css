@@ -4332,8 +4332,8 @@ body.layout-2 #mainSlider .slide-content h4 {
     overflow: hidden;
 }
 
-.breadcrumbs {
-    color: #fff;
+.content-area .breadcrumbs {
+    color: #000;
     background-color: transparent;
     display: inline-block;
     padding: 18px 0;
@@ -4342,9 +4342,9 @@ body.layout-2 #mainSlider .slide-content h4 {
     width: 100%;
 }
 
-.breadcrumbs li,
-.breadcrumbs a {
-    color: #fff;
+.content-area .breadcrumbs li,
+.content-area .breadcrumbs a {
+    color: #000;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -8456,7 +8456,7 @@ form.quote-form p {
 }
 
 .breadcrumbs span {
-    color: #fff;
+    color: #000000;
 }
 
 .back-to-top {
@@ -12162,6 +12162,7 @@ body.layout-2 h2.h-lg {
     padding-bottom: 25px;
     margin-bottom: 24px;
     font-size: 42px;
+    padding-top: 35px;
 }
 
 body.layout-2 h1:after,
@@ -12732,7 +12733,6 @@ body.layout-2 .btn.btn-border:focus {
 .brands-grid a {
     display: block;
     margin: 2px;
-    border: 1px solid #edeff0;
     min-width: calc(14.285% - 4px);
     width: calc(14.285% - 4px);
     align-self: center;
@@ -14855,7 +14855,7 @@ body:not(.home) {
 }
 
 body:not(.home) #pageContent {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .content-area a {
@@ -14920,4 +14920,17 @@ body:not(.home) #pageContent {
     border-bottom: none;
     padding: 0 0 20px 0;
     margin: 0;
+}
+
+.galaxy_expert {
+    padding-top: 100px;
+}
+
+.galaxy_expert .marker-list-sm-1 a {
+    color: #000000;
+}
+
+.galaxy_expert .marker-list-sm-1 a:hover {
+    color: #fede00;
+    text-decoration: none;
 }
