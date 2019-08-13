@@ -227,7 +227,7 @@ function galaxy_theme_setup() {
 	add_theme_support('menus');
 	add_theme_support( 'custom-logo', [
 		'height'      => 75,
-		'width'       => 210,
+		'width'       => 473,
 		'flex-width'  => false,
 		'flex-height' => false,
 		'header-text' => '',
